@@ -9,7 +9,8 @@ using Android.OS;
 
 namespace BarCodeReader.Droid
 {
-    [Activity(Label = "BarCodeReader", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "BarCodeReader", Icon = "@drawable/icon", MainLauncher = true,
+        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -18,7 +19,7 @@ namespace BarCodeReader.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+
         }
     }
 }
-
