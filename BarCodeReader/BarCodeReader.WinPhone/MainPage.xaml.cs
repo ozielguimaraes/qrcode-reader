@@ -27,7 +27,6 @@ namespace BarCodeReader.WinPhone
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
             LoadApplication(new BarCodeReader.App());
         }
 
