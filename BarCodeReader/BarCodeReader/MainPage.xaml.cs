@@ -10,11 +10,11 @@ namespace BarCodeReader
         {
             InitializeComponent();
         }
-
-
+        
         private async void LerQRCode_OnClicked(object sender, EventArgs e)
         {
-            var scanPage = new ZXingScannerPage();
+            var scanPage = new CustomScanPage();
+            //var scanPage = new ZXingScannerPage();
             // Navigate to our scanner page
            await  Navigation.PushModalAsync(scanPage);
         }
